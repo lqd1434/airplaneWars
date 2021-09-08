@@ -1,0 +1,51 @@
+.stage{
+  width: 320px;
+  height: 568px;
+  overflow: hidden;
+  margin: 0 auto;
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+.bg{
+  height: 768px;
+  width: 100%;
+  background: url("./static/images/appbg2.jpeg") repeat-y;
+  animation: offTopAnimate 15s linear infinite;
+}
+
+//.bgAnimate{
+//  animation: offTopAnimate 15s linear infinite;
+//}
+
+.airPlane{
+  position: absolute;
+  //animation: move 5s linear infinite;
+  transition: all 0.2s linear;
+}
+
+.ball{
+  position: absolute;
+  bottom: 90px;
+  left: 155px;
+  box-shadow: 0 0 10px white;
+  background-color: white;
+  border-radius: 999px;
+  transition: all 0.2s linear;
+}
+
+@keyframes offTopAnimate {
+  to {
+    background-position: 0 calc(800px * 1);
+  }
+}
+
+@keyframes move {
+  from{
+    left: 20px;
+  }
+  to {
+    left: 320px;
+  }
+}
